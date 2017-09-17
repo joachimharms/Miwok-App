@@ -43,18 +43,26 @@ public class NumberActivity extends AppCompatActivity {
 //        Log.v("NumberActivity", "Content of words index 9: " + words.get(9));
 
         LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
-        TextView wordsView = new TextView(this);
-        wordsView.setText(words.get(0));
-        rootView.addView(wordsView);
+//        TextView wordsView = new TextView(this);
+//        wordsView.setText(words.get(0));
+//        rootView.addView(wordsView);
+//
+//        TextView wordsView1 = new TextView(this);
+//        wordsView1.setText(words.get(1));
+//        rootView.addView(wordsView1);
+//
+//        TextView wordsView2 = new TextView(this);
+//        wordsView2.setText(words.get(2));
+//        rootView.addView(wordsView2);
 
-        TextView wordsView1 = new TextView(this);
-        wordsView1.setText(words.get(1));
-        rootView.addView(wordsView1);
+        int count = 0;
+        while(count < words.size()){
+            TextView wordsView = new TextView(this);
+            wordsView.setText(words.get(count));
+            rootView.addView(wordsView);
+            count++;
+        }
 
-        TextView wordsView2 = new TextView(this);
-        wordsView2.setText(words.get(2));
-        rootView.addView(wordsView2);
-//       for (int i = 0; int i = words.size() - 1; i++){
 
 
     }
