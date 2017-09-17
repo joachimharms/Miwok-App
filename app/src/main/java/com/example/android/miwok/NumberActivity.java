@@ -55,15 +55,20 @@ public class NumberActivity extends AppCompatActivity {
 //        wordsView2.setText(words.get(2));
 //        rootView.addView(wordsView2);
 
-        int count = 0;
-        while(count < words.size()){
+//        int count = 0;
+//        while(count < words.size()){
+//            TextView wordsView = new TextView(this);
+//            wordsView.setText(words.get(count));
+//            rootView.addView(wordsView);
+//            count++;
+//        }
+
+        for(int i = 0; i < words.size(); i++ ){
             TextView wordsView = new TextView(this);
-            wordsView.setText(words.get(count));
+            wordsView.setText(words.get(i));
             rootView.addView(wordsView);
-            count++;
+
         }
-
-
 
     }
 }
